@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <event name="sales_order_place_after">
+        <observer name="XCHANGE_XMP31_Order_Save_After" instance="XCHANGE\XMP31\Observer\OrderPlaceafter" />
+    </event>
+
+    <event name="sales_order_invoice_pay">
+        <observer name="XCHANGE_XMP31_invoice_pay" instance="XCHANGE\XMP31\Observer\invoicePay" />
+    </event>
+
+</config>

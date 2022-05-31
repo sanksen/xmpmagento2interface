@@ -1,0 +1,13 @@
+<?php
+
+$order_id = $block->getRealOrdID();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$orderbysank = $objectManager->create('\Magento\Sales\Model\Order')->load($order_id);
+$preexistingLicenceInfo = $orderbysank->getData('XCHANGE_license_info'); /*** Check if we've done it already, so we can break out if we have... ***/
+
+if ($preexistingLicenceInfo != "")
+{
+    echo $orderbysank->getData('XCHANGE_license_info');
+}
+
+?>

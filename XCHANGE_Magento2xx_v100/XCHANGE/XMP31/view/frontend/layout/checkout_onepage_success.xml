@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="page.bottom">
+        <block class="XCHANGE\XMP31\Block\Success"
+               name="amit.order.success"
+               template="XCHANGE_XMP31::order/success.phtml"
+               before="-">
+        </block>
+    </referenceContainer>
+</body>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <example_section>
+            <Interface>
+                <SandboxURL>https://www.xchangemarket.net/GCCI_DEV/TMPSAND_Ver3_1.asmx?WSDL</SandboxURL>
+                <ProductionURL></ProductionURL>
+            </Interface>
+        </example_section>
+    </default>
+</config>

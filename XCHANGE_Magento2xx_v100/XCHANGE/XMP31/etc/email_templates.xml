@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:Magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="xch_license_template" label="XCH License Email" file="email_template.html" type="html" module="XCHANGE_XMP31" area="frontend"/>
+</config>

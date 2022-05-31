@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Location: magento2_root/app/code/Vendorname/Extensionname/etc/adminhtml/system.xml
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="example_tab" translate="label" sortOrder="1000">
+
+            <label>XCHANGE MARKET API</label>
+
+        </tab>
+
+        <section id="example_section" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+
+
+            <label>config</label>
+            <tab>example_tab</tab>
+            <resource>XCHANGE_XMP31::config</resource>
+
+
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+
+                <label>Reseller Settings</label>
+
+                <field id="text_example" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Reseller ID</label>
+                </field>
+
+                <field id="reseller_pw" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Reseller PW</label>
+                </field>
+
+                <field id="ponum" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>PO # prefix</label>
+                </field>
+
+                <field id="adminemail" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Admin Email</label>
+                </field>
+
+                <field id="dropdown_example" translate="label" type="select" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Mode</label>
+                    <source_model>XCHANGE\XMP31\Model\Config\Source\Custom</source_model>
+                </field>
+
+
+                <field id="dropdown_usecc" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Use credit-card where needed?</label>
+                    <source_model>XCHANGE\XMP31\Model\Config\Source\CCUsage</source_model>
+                </field>
+
+                <field id="CCEmail" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CCEmail</label>
+                </field>
+
+                <field id="CCName" translate="label" type="text" sortOrder="22" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CCName</label>
+                </field>
+
+                <field id="CCType" translate="label" type="select" sortOrder="23" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CCType</label>
+                    <source_model>XCHANGE\XMP31\Model\Config\Source\CCType</source_model>
+                </field>
+
+                <field id="CCNumber" translate="label" type="text" sortOrder="24" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>CCNumber</label>
+                </field>
+
+                <field id="CCExpiryMonth" translate="label" type="select" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CCExpiryMonth</label>
+                    <source_model>XCHANGE\XMP31\Model\Config\Source\CCExpiryMonth</source_model>
+                </field>
+
+                <field id="CCExpiryYear" translate="label" type="select" sortOrder="26" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CCExpiryYear</label>
+                    <source_model>XCHANGE\XMP31\Model\Config\Source\CCExpiryYear</source_model>
+                </field>
+
+
+            </group>
+
+
+            <group id="Interface" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+
+                <label>Interface</label>
+                <field id="SandboxURL" translate="label" type="text" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>SandboxURL</label>
+                </field>
+                <field id="ProductionURL" translate="label" type="text" sortOrder="26" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>ProductionURL</label>
+                </field>
+
+
+            </group>
+
+
+        </section>
+
+    </system>
+</config>

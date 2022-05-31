@@ -1,0 +1,8 @@
+<?php
+
+$order_id = $this->getRequest()->getParam('order_id');
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$order = $objectManager->create('\Magento\Sales\Model\Order')->load($order_id);
+echo $order->getData('XCHANGE_license_info');
+
+?>

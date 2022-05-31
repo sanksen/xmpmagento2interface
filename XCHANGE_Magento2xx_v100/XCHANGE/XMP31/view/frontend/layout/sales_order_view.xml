@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="page.bottom">
+        <block class="XCHANGE\XMP31\Block\Comment"
+               name="amit.order.view"
+               template="XCHANGE_XMP31::order/view.phtml"
+               before="-">
+        </block>
+    </referenceContainer>
+</body>
